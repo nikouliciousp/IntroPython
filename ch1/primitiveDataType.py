@@ -17,3 +17,4 @@ print(f"Boolean example: {boolean_example}, Type: {type(boolean_example)}")
 # Example of None (null equivalent)
 none_example = None  # Represents the absence of a value or null
 print(f"None example: {none_example}, Type: {type(none_example)}")
+

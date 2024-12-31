@@ -1,7 +1,5 @@
 # IntroPython
 
-# IntroPython
-
 ## Overview
 
 IntroPython is a beginner-friendly Python project that serves as a starting point for understanding basic Python

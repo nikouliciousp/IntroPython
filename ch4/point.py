@@ -14,6 +14,26 @@ class Point:
         self.__x = x
         self.__y = y
 
+    @property
+    def x(self):
+        """Get the x-coordinate of the Point."""
+        return self.__x
+
+    @x.setter
+    def x(self, value: float):
+        """Set the x-coordinate of the Point."""
+        self.__x = value
+
+    @property
+    def y(self):
+        """Get the y-coordinate of the Point."""
+        return self.__y
+
+    @y.setter
+    def y(self, value: float):
+        """Set the y-coordinate of the Point."""
+        self.__y = value
+
     def display_info(self):
         """
         Return a string representation of the Point object.
@@ -34,6 +54,11 @@ def main():
     """
     point = Point(3.2, 2)
     point.display_info()
+    point.x = 5.6
+    point.y = 7.8
+    point.display_info()
+    print(point.x)
+    print(point.y)
 
 
 if __name__ == "__main__":

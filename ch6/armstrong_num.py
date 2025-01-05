@@ -5,7 +5,12 @@ def main():
     is a number that is equal to the sum of its own digits each raised 
     to the power of the number of digits.
     """
-    num = int(input("Enter a number: "))  # Add input functionality to get a number.
+    while True:
+        try:
+            num = int(input("Enter a number: "))  # Add input functionality to get a number.
+            break
+        except ValueError:
+            print("Invalid input! Please enter an integer.")
 
     # Convert number to string to calculate its digits.
     sum_of_powers = sum(int(digit) ** len(str(num)) for digit in str(num))

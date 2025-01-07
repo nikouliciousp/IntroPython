@@ -1,6 +1,10 @@
-# Example 1: Using the union() method
 set1 = {1, 2, 3}
+print("Set 1:", set1)
+
 set2 = {3, 4, 5}
+print("Set 2:", set2)
+
+# Example 1: Using the union() method
 union_result = set1.union(set2)  # Combines elements from both sets without duplicates
 print("Union:", union_result)
 
@@ -44,4 +48,25 @@ print("Difference -:", difference_result)
 symmetric_difference_result = set1 ^ set2  # Returns elements in either set, but not in both
 print("Symmetric Difference ^:", symmetric_difference_result)
 
+# Example 12: CRUD operations for set1
+# Create/Add
+set1.add(5)  # Adds an element to the set
+print("Added 5:", set1)
+
+# Read/Check
+if 5 in set1:
+    print("5 exists in set1")
+else:
+    print("5 does not exist in set1")
+
+# Update
+if 5 in set1:
+    set1.remove(5)
+    set1.update({6})  # Correct method for adding an element
+    print("Updated 5 to 6:", set1)
+
+# Delete
+if 6 in set1:
+    set1.remove(6)  # Removes an element from the set
+    print("Removed 6:", set1)
 

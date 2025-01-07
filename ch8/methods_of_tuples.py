@@ -52,3 +52,8 @@ print(max(my_tuple))  # Maximum value in the tuple, Expected Output: 5
 my_tuple = (10, 20, 30, 40, 50)
 sliced = my_tuple[1:4]  # Extracts elements from index 1 to 3 (exclusive of index 4)
 print(f"Sliced Tuple: {sliced}")  # Expected Output: (20, 30, 40)
+
+# Example of sorting a tuple
+my_tuple = (4, 1, 3, 2)
+sorted_tuple = tuple(sorted(my_tuple))  # Converts the tuple to a list, sorts it, and converts it back to a tuple
+print(f"Sorted Tuple: {sorted_tuple}")  # Expected Output: (1, 2, 3, 4)

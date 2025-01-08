@@ -21,17 +21,25 @@ def main():
         inventory.remove_item('Shirt')
     except (store.OutOfStockError, ValueError) as e:
         print(e)
+    finally:
+        print("Items in inventory after removal:")
+        inventory.print_items()
+        print()
 
     # Print items again to confirm removal
-    print("\nItems in inventory after removal:")
+    print("Items in inventory after removal:")
     inventory.print_items()
+    print()
 
     # Additional example - removing a non-existent item
     try:
-        print("\nAttempting to remove 'Socks' (not in inventory):")
+        print("Attempting to remove 'Socks' (not in inventory):")
         inventory.remove_item('Socks')
     except (store.OutOfStockError, ValueError) as e:
         print(e)
+    finally:
+        print("Items in inventory after removal:")
+        inventory.print_items()
 
 if __name__ == "__main__":
     main()

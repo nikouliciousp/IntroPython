@@ -95,4 +95,4 @@ class Inventory:
         :return: None
         """
         for item in self.items:
-            print(item)
+            print(f"{item.name}: {item.quantity}")
